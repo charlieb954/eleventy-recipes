@@ -1,0 +1,18 @@
+# TITLE
+Optional subheader
+
+## info  
+* About XXX minutes  
+* XXX servings  
+
+## ingredients
+* 
+
+## steps  
+1. 
+
+## notes  
+* 
+
+## based on  
+* url to where the recipe came from
