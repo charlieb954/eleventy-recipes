@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-h1 {
+#navh {
     font-size: 2.5em;
     font-weight: 900;
     text-transform: uppercase;
@@ -43,4 +43,12 @@ h2 {
     text-transform: uppercase;
 
     margin-bottom: 0.6em;
+}
+
+li:first-letter {
+    text-transform: capitalize;
+}
+
+li {
+    list-style-type: square;
 }

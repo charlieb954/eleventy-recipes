@@ -11,13 +11,13 @@
 
 <body>
     <div style="width:80%; margin:0 auto;">
-        <h1><a href="/eleventy-recipes">RECIPE BOOK</a></h1>
+        <h1 id="navh"><a href="/eleventy-recipes">RECIPE BOOK</a></h1>
         <br>
         
 <article>
     <p>Simple interface for storing recipes.</p>
 <ul>
-<li><a href="chicken-bacon-mac-n-cheese.html">chicken-bacon-mac-n-cheese</a></li>
+<li><a href="chicken-and-bacon-mac-n-cheese">Chicken and bacon mac n cheese</a></li>
 </ul>
 
 </article>

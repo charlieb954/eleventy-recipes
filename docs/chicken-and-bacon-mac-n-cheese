@@ -5,17 +5,17 @@
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>chicken-bacon-mac-n-cheese</title>
+    <title>Chicken and bacon mac n cheese</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div style="width:80%; margin:0 auto;">
-        <h1><a href="/eleventy-recipes">RECIPE BOOK</a></h1>
+        <h1 id="navh"><a href="/eleventy-recipes">RECIPE BOOK</a></h1>
         <br>
         
 <article>
-    <h2>chicken-bacon-mac-n-cheese</h2>
+    <h2>Chicken and bacon mac n cheese</h2>
 <p>A twist to the usual mac n cheese recipes.</p>
 <h2>info</h2>
 <ul>
