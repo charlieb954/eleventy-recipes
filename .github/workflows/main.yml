@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '18.16.1'
 
-      - run: npm start
+      - run: cd eleventy-recipes && npm start
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
