@@ -1,7 +1,7 @@
 ---
 title: 'Chicken and bacon mac n cheese'
 layout: 'layouts/recipe.html'
-permalink: "{{ title | slug }}"
+permalink: "{{ title | slug }}.html"
 ---
 
 ## {{title}}
