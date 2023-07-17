@@ -14,7 +14,7 @@ jobs:
           node-version: '18.16.1'
 
       - run: npm install @11ty/eleventy
-      - run: npm start
+      - run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
