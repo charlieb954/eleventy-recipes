@@ -8,9 +8,9 @@
     "build": "eleventy"
   },
   "keywords": [],
-  "author": "",
+  "author": "charlieb954",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   }
 }
