@@ -5,7 +5,7 @@ permalink: "{{ title | slug }}.html"
 ---
 
 ## {{title}}
-A twist to the usual mac n cheese recipes.
+A twist to the usual mac n cheese recipe.
 
 ## info  
 * About 30 minutes  
@@ -24,11 +24,11 @@ A twist to the usual mac n cheese recipes.
 - 80ml semi-skimmed milk
 
 ## steps  
-1. Grill or air fry bacon rashes until crispy and set aside.
+1. Oven bake the bacon rashes at 180C until crispy and set aside.
 2. Fry the chicken in fry light with the garlic, herbs, salt and pepper until cooked through.
 3. Get your pasta onto a boil.
-4. Whilst the pasta is boiling, stir in the cream cheese, milk, yoghurt and grated cheese.
+4. Stir in the cream cheese, milk, yoghurt and grated cheese to the chicken pan.
 5. Simmer for a few minutes then stir in a ladle of pasta water, salt and pepper and the cooked, drained pasta.
 
 ## notes  
-* 
+* Optionally, switch the 20g yoghurt for an additional 20ml milk.
