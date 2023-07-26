@@ -37,7 +37,7 @@ h2 {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0.6em;
+    margin-top: 1em;
 }
 
 li:first-letter {
@@ -45,7 +45,7 @@ li:first-letter {
 }
 
 li {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 #content {
@@ -91,7 +91,7 @@ li {
 
 /* home.html elements */
 .home-list {
-    column-count: 2;
+    margin-bottom: 1em;
 }
 
 .home-description:first-letter {
