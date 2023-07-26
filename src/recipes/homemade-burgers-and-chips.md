@@ -1,11 +1,9 @@
 ---
-title: 'Homemade burgers and chips'
+title: 'homemade burgers and chips'
+description: 'home made burgers.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
-
-## {{title}}
-Home made burgers.
 
 ## info  
 * About 40 minutes  

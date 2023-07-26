@@ -1,11 +1,9 @@
 ---
-title: 'Mac n cheese'
+title: 'mac n cheese'
+description: 'a classic mac n cheese recipe.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
-
-## {{title}}
-A classic mac n cheese recipe.
 
 ## info  
 * About 45 minutes  

@@ -1,15 +1,13 @@
 ---
-title: 'Baked conchiglioni with spinach and ricotta'
+title: 'baked conchiglioni with spinach and ricotta'
+description: 'baked pasta shells stuffed with spinach and ricotta.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
 
-## {{title}}
-Baked pasta shells stuffed with spinach and ricotta.
-
 ## info  
 * About 90 minutes  
-* 4 servings  
+* 4 servings
 
 ## ingredients
 - 250g conchiglioni pasta shells

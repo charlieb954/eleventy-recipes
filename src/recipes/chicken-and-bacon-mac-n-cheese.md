@@ -1,11 +1,10 @@
 ---
-title: 'Chicken and bacon mac n cheese'
+title: 'chicken and bacon mac n cheese'
+description: 'a twist to the usual mac n cheese recipe.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
 
-## {{title}}
-A twist to the usual mac n cheese recipe.
 
 ## info  
 * About 30 minutes  

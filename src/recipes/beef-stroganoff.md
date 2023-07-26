@@ -1,11 +1,9 @@
 ---
-title: 'Beef stroganoff'
+title: 'beef stroganoff'
+description: 'a simple beef stroganoff recipe.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
-
-## {{title}}
-A simple beef stroganoff recipe.
 
 ## info  
 * About 60 minutes  
