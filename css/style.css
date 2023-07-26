@@ -26,6 +26,7 @@ ul,
 ol {
     font-size: 1em;
     line-height: 1.3em;
+    margin-bottom: 0.5em;
 }
 
 ul {
@@ -41,6 +42,10 @@ h2 {
 
 li:first-letter {
     text-transform: capitalize;
+}
+
+li {
+    margin-bottom: 1em;
 }
 
 #content {
@@ -69,4 +74,26 @@ li:first-letter {
     display: inline-block;
     border-top: 1px solid white;
     background-color: #333;
+}
+
+/* recipe.html elements */
+.recipe-description {
+    text-transform: lowercase;
+}
+
+.recipe-description:first-letter {
+    text-transform: uppercase;
+}
+
+.recipe-title {
+    text-transform: uppercase;
+}
+
+/* home.html elements */
+.home-list {
+    column-count: 2;
+}
+
+.home-description:first-letter {
+    text-transform: uppercase;
 }
