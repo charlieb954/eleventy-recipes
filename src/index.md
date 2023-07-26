@@ -1,11 +1,11 @@
 ---
-title: 'RECIPE BOOK'
+title: 'recipe book'
+description: 'a simple interface for storing personal recipes.'
 layout: 'layouts/home.html'
 permalink: '/index.html'
 ---
 
-Simple interface for storing recipes.
 
 {% for recipe in collections.recipes -%}
-- [{{ recipe.data.title }}]({{ recipe.data.title | slug }}.html)
+- [{{ recipe.data.title | capitalize }}]({{ recipe.data.title | slug }}.html)
 {% endfor -%}
