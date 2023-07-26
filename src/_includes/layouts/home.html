@@ -1,6 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<article>
+<p class="home-description">{{ description }}</p>
+<div class="home-list">
     {{ content | safe }}
-</article>
+</div>
 {% endblock %}
