@@ -17,7 +17,7 @@ The 'recipes' folder contains the markdown files for all the recipes which are t
 
 Finally, the 'index.md' is also included in 'src', this file is the home page of the static website.
 
-## .evelnty.js
+## .eleventy.js
 This file is really important, it tells eleventy that it can use nunjucks to build HTML websites, nunjucks is the {{ title }} syntax seen inside the markdown files. It also tells eleventy which folders to include; in my case I'm including the CSS in the passthrough so the website can use it.
 
 ## .nojekyll
