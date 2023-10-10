@@ -1,7 +1,8 @@
 body {
-    background-color: #333;
-    color: white;
-    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+    background-color: #121212;
+    color: #cbcbcb;
+    font-family: "Inter", sans-serif;
+    /* font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New; */
     margin: 0;
 }
 
@@ -9,7 +10,7 @@ body {
 a,
 a:link,
 a:visited {
-    color: white;
+    color: #cbcbcb;
     text-decoration: none;
     background-color: transparent;
 }
@@ -17,7 +18,7 @@ a:visited {
 a:active,
 a:hover {
     color: white !important;
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: rgba(135, 206, 250, 0.344);
 }
 
 /* all other text */
@@ -33,11 +34,16 @@ ul {
     list-style-type: square;
 }
 
+h1 {
+    color: lightskyblue;
+}
+
 h2 {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 1em;
+    color: lightskyblue;
 }
 
 li:first-letter {
@@ -73,7 +79,7 @@ li {
     opacity: 1;
     display: inline-block;
     border-top: 1px solid white;
-    background-color: #333;
+    background-color: #121212;
 }
 
 /* recipe.html elements */
