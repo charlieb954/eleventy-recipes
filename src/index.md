@@ -1,6 +1,6 @@
 ---
 title: 'recipe book'
-description: 'a simple interface for storing personal recipes.'
+description: 'A simple interface for storing all types of personal recipes. Choose from a recipe below:'
 layout: 'layouts/home.html'
 permalink: '/index.html'
 ---
