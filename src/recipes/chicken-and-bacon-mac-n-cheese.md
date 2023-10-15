@@ -25,9 +25,9 @@ permalink: "{{ title | slug }}.html"
 ## steps  
 1. Oven bake the bacon rashes at 180C until crispy and set aside.
 2. Fry the chicken in fry light with the garlic, herbs, salt and pepper until cooked through.
-3. Get your pasta onto a boil.
+3. Put the macaroni into a pan of boilet water and cook as per the instructions.
 4. Stir in the cream cheese, milk, yoghurt and grated cheese to the chicken pan.
-5. Simmer for a few minutes then stir in a ladle of pasta water, salt and pepper and the cooked, drained pasta.
+5. Simmer for a few minutes then stir in a ladle of pasta water. Season with salt and pepper as required and once cooked add the drained pasta.
 
 ## notes  
 * Optionally, switch the 20g yoghurt for an additional 20ml milk.

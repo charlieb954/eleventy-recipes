@@ -20,4 +20,6 @@ permalink: "{{ title | slug }}.html"
 - salt and pepper
 
 ## steps  
-1. 
+1. Remove the skin from the sausages and shallow fry the sausage meat, breaking it up into small pieces. Once cooked, add the fennel, thyme and chilli flakes and continue to fry for 2-3 minutes. Add the tinned cherry and chopped tomatoes and bring the a simmer.
+2. In a separate pan cook the spaghetti as per the instructions, once ready add the spaghetti to the sausage pan directly from the spagetti pan ensuring some water transfers with it.
+3. Optionally serve with grated parmesan cheese.

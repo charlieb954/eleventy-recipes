@@ -2,14 +2,14 @@
 
 This project is a recipe book created using Eleventy and basic CSS to generate a static site for personal cooking from Markdown files. It was also an opportunity to work with GitHub actions to manage the deployment to GitHub pages [using this really helpful guide](https://lea-tortay.com/content/writings/github-pages-eleventy/).
 
-It's intentionally simplistic design allows me to quickly upload recipes as markdown files which are generated into HTML files. The recipes are variations of recipes from advert-riddled websites and/or social media videos.
+The websites intentionally simplistic design allows me to quickly upload recipes as markdown files which are generated into HTML files using eleventy. The recipes are variations of recipes from advert-riddled websites and/or social media videos.
 
 [View a demo here](https://charlieb954.github.io/eleventy-recipes)
 
 Below is the folder structure explained for future reference.
 
 ## src
-This folder includes the layouts such as the base.html file for all webpages to inherit. At the moment, 2 other layouts exist one for' home.html', which bullet points all the available receipes, and a second for 'recipe.html' which all the recipes use as a template.
+This folder includes the layouts such as the base.html file for all webpages to inherit. At the moment, 2 other layouts exist one for 'home.html', which bullet points all the available receipes, and a second for 'recipe.html' which all the recipes use as a template.
 
 The 'CSS' folder is stored here and is added as a passthrough/watchtarget in the .eleventy.js file.
 
