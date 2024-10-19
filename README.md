@@ -25,9 +25,11 @@ recipes use as a template.
 The 'CSS' folder is stored here and is added as a passthrough/watchtarget in the
 .eleventy.js file.
 
-The 'recipes' folder contains the markdown files for all the recipes which are
-then transformed into html files by Eleventy. Now the website is up and running,
-this should be the only folder that will be regularly edited.
+The 'mains' folder contains the markdown files for all the main recipes which
+are then transformed into html files by Eleventy. The 'desserts' folder contains
+the markdown files for the dessert recipes which are then transformed into html
+files by Eleventy. Now the website is up and running, this should be the only
+folder that will be regularly edited.
 
 Finally, the 'index.md' is also included in 'src', this file is the home page of
 the static website.
