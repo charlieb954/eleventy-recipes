@@ -1,10 +1,9 @@
 # ELEVENTY RECIPES
 
-This project is a recipe book created using Eleventy and basic CSS to generate a
-static site for personal cooking from Markdown files. It was also an opportunity
-to work with GitHub actions to manage the deployment to GitHub pages [using this
-really helpful
-guide](https://lea-tortay.com/content/writings/github-pages-eleventy/).
+This project is a recipe book created using Eleventy to generate a static site
+for personal cooking from Markdown files and basic CSS. It was also an
+opportunity to work with GitHub actions to manage the deployment to GitHub
+pages.
 
 The websites intentionally simplistic design allows me to quickly upload recipes
 as markdown files which are generated into HTML files using eleventy. The
@@ -12,6 +11,13 @@ recipes are variations of recipes from advert-riddled websites and/or social
 media videos.
 
 [View a demo here](https://charlieb954.github.io/eleventy-recipes)
+
+To use GitHub pages, a deploy key and a secret are required, they can be
+generated using ssh-keygen. For a full breakdown of how to create the public and
+private keys [see
+here](https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-create-ssh-deploy-key).
+For a step by step guide on how to create an Eleventy website using GitHub pages
+[see here](https://lea-tortay.com/articles/github-pages-eleventy/).
 
 Below is the folder structure explained for future reference.
 
@@ -39,7 +45,9 @@ the static website.
 This file is really important, it tells eleventy that it can use nunjucks to
 build HTML websites, nunjucks is the {{ title }} syntax seen inside the markdown
 files. It also tells eleventy which folders to include; in my case I'm including
-the CSS in the passthrough so the website can use it.
+the CSS in the passthrough so the website can use it. Finally, it tells eleventy
+which folder to output the webpages into and where to find them. In my case my
+content is in `src` and I output to `docs`.
 
 ## .nojekyll
 
