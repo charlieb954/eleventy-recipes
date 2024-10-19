@@ -5,7 +5,14 @@ layout: 'layouts/home.html'
 permalink: '/index.html'
 ---
 
+## Mains
 
-{% for recipe in collections.recipes -%}
+{% for recipe in collections.mains -%}
+- [{{ recipe.data.title | capitalize }}]({{ recipe.data.title | slug }}.html)
+{% endfor -%}
+
+## Desserts
+
+{% for recipe in collections.desserts -%}
 - [{{ recipe.data.title | capitalize }}]({{ recipe.data.title | slug }}.html)
 {% endfor -%}
