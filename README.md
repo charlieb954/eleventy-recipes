@@ -1,53 +1,74 @@
 # ELEVENTY RECIPES
 
-This project is a recipe book created using Eleventy to generate a static site
-for personal cooking from Markdown files and basic CSS. It was also an
-opportunity to work with GitHub actions to manage the deployment to GitHub
-pages.
+[![Eleventy Build](https://github.com/charlieb954/eleventy-recipes/actions/workflows/eleventy_build.yml/badge.svg)](https://github.com/charlieb954/eleventy-recipes/actions/workflows/eleventy_build.yml)
 
-The websites intentionally simplistic design allows me to quickly upload recipes
-as markdown files which are generated into HTML files using eleventy. The
-recipes are variations of recipes from advert-riddled websites and/or social
-media videos.
+A personal recipe book built with [Eleventy](https://www.11ty.dev/) and deployed to GitHub Pages. This project serves as a clean, simple, and ad-free home for my favorite recipes, generated from simple Markdown files.
 
 [View a demo here](https://charlieb954.github.io/eleventy-recipes)
 
-To use GitHub pages, a deploy key and a secret are required, they can be
-generated using ssh-keygen. For a full breakdown of how to create the public and
-private keys [see
-here](https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-create-ssh-deploy-key).
-For a step by step guide on how to create an Eleventy website using GitHub pages
-[see here](https://lea-tortay.com/articles/github-pages-eleventy/).
+## ✨ Features
 
-Below is the folder structure explained for future reference.
+- **Simple Content Management**: Recipes are just Markdown files. Easy to write, easy to edit.
+- **Fast and Lightweight**: Built as a static site with Eleventy.
+- **Automated Deployments**: Pushing to the `main` branch automatically builds and deploys the site using GitHub Actions.
+- **Clean, Minimalist Design**: Just the recipes, no distractions.
 
-## src
+## 🚀 Getting Started
 
-This folder includes the layouts such as the base.html file for all webpages to
-inherit. At the moment, 2 other layouts exist one for 'home.html', which bullet
-points all the available receipes, and a second for 'recipe.html' which all the
-recipes use as a template.
+To run this project locally:
 
-The 'CSS' folder is stored here and is added as a passthrough/watchtarget in the
-.eleventy.js file.
+1. **Clone the repository:**
 
-The 'mains' folder contains the markdown files for all the main recipes which
-are then transformed into html files by Eleventy. The 'desserts' folder contains
-the markdown files for the dessert recipes which are then transformed into html
-files by Eleventy. Now the website is up and running, this should be the only
-folder that will be regularly edited.
+    ```bash
+    git clone https://github.com/charlieb954/eleventy-recipes.git
+    cd eleventy-recipes
+    ```
 
-Finally, the 'index.md' is also included in 'src', this file is the home page of
-the static website.
+2. **Install dependencies:**
 
-## .eleventy.js
+    ```bash
+    npm install
+    ```
 
-This file is really important, it tells eleventy that it can use nunjucks to
-build HTML websites, nunjucks is the {{ title }} syntax seen inside the markdown
-files. It also tells eleventy which folders to include; in my case I'm including
-the CSS in the passthrough so the website can use it. Finally, it tells eleventy
-which folder to output the webpages into and where to find them. In my case my
-content is in `src` and I output to `docs`.
+3. **Run the development server, the site will be available at `http://localhost:8080`.:**
+
+    ```bash
+    npx start
+    ```
+
+## 📂 Project Structure
+
+Here's a breakdown of the key files and directories:
+
+```
+eleventy-recipes/
+├── .eleventy.js        # Eleventy configuration file.
+├── .github/
+│   └── workflows/
+│       └── eleventy_build.yml # GitHub Actions workflow for deployment.
+├── src/
+│   ├── _includes/
+│   │   └── layouts/    # HTML layouts (base, home, recipe).
+│   ├── css/            # Stylesheets.
+│   ├── desserts/       # Dessert recipe Markdown files.
+│   ├── mains/          # Main course recipe Markdown files.
+│   └── index.md        # The home page content.
+├── docs/               # The output directory for the generated site.
+└── package.json        # Project metadata and dependencies.
+```
+
+- **`.eleventy.js`**: Configures Eleventy. It sets up template engines (`njk`), defines the input (`src`) and output (`docs`) directories, and handles passthrough file copying for assets like CSS.
+- **`src/`**: Contains all the source files for the website.
+  - `_includes/layouts/`: The Nunjucks templates that define the structure of the pages.
+  - `mains/`, `desserts/`: These folders contain the individual recipes as Markdown files. Eleventy uses collections to group them.
+  - `index.md`: The content for the homepage, which lists all the recipes.
+- **`.github/workflows/eleventy_build.yml`**: Defines the CI/CD pipeline. On every push to the `main` branch, it checks out the code, installs dependencies, builds the Eleventy site, and deploys the contents of the `docs` folder to the `gh-pages` branch.
+
+## 🤖 Deployment
+
+This project uses the `peaceiris/actions-gh-pages` action to deploy the site.
+
+To use GitHub Pages with a deploy key, a public/private SSH key pair is needed. The private key is stored as a repository secret (`ACTIONS_DEPLOY_KEY`), and the public key is added as a deploy key in the repository settings with write access.
 
 ## .nojekyll
 
