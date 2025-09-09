@@ -27,13 +27,20 @@ To run this project locally:
 2. **Install dependencies:**
 
     ```bash
-    npm install
+    npm ci
     ```
 
 3. **Run the development server, the site will be available at `http://localhost:8080`.:**
 
     ```bash
-    npx start
+    npm start
+    ```
+
+4. **Optionally build the website as a static site and serve it:**
+
+    ```bash
+    npm run build
+    npx serve docs
     ```
 
 ## 📂 Project Structure
@@ -91,7 +98,7 @@ package is installed.
 
 package.json files contain descriptive and functional metadata about a project,
 such as a name, version, and dependencies. Here we can also include 'scripts'
-that are actioned. For example, there's one for 'npm start' which will sever the
+that are actioned. For example, there's one for 'npm start' which will serve the
 eleventy webpage.
 
 ## branches
@@ -99,16 +106,3 @@ eleventy webpage.
 When the '.github/workflows/eleventy_build.yml' file is actioned by a change to
 the 'main' branch, the output will be a new branch called gh-pages. This is the
 current deployment of the website.
-
-## Other notes
-
-To install eleventy head over to the
-[docs](https://www.11ty.dev/docs/getting-started/).
-
-Once insatlled, to run the website run the following command from the root file.
-
-    npx @11ty/eleventy --serve
-
-or because of the script we created in package.json
-
-    npm start
