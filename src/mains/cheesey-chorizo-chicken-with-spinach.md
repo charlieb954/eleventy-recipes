@@ -1,12 +1,12 @@
 ---
-title: 'cheesey chorizo and chicken with spinach'
-description: 'a cheesey chorizo, chicken dish with tomatoes and spinach .'
+title: 'Cheesy Chorizo Chicken with Spinach'
+description: 'A cheesy chorizo and chicken dish with tomatoes and spinach.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
 
 
-## info  
+## info
 * About 45 minutes  
 * 2 servings  
 
@@ -19,7 +19,7 @@ permalink: "{{ title | slug }}.html"
 - 1 white onion
 - frozen fries
 
-## steps  
+## steps
 1. fry the chicken and onion. add the fries to the oven/air fryer
 2. once the chicken is almost cooked add the chorizo and continue cooking until
    all the oil has flavoured the chicken and onion
@@ -30,5 +30,5 @@ permalink: "{{ title | slug }}.html"
 6. once the mozzarella has started to melt, take it off the heat and serve it
    with fries
 
-## notes  
+## notes
 * optionally, switch frozen fries for home made chips

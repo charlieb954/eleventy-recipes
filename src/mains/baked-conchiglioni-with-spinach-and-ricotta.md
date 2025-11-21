@@ -1,6 +1,6 @@
 ---
-title: 'baked conchiglioni with spinach and ricotta'
-description: 'baked pasta shells stuffed with spinach and ricotta.'
+title: 'Baked Conchiglioni with Spinach and Ricotta'
+description: 'Baked pasta shells stuffed with spinach and ricotta.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---

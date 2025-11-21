@@ -1,16 +1,17 @@
 ---
-title: 'homemade burgers and chips'
-description: 'home made burgers.'
+title: 'Homemade Burgers and Chips'
+description: 'Homemade burgers and chips.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
 
-## info  
+## info
 * About 40 minutes  
 * 2 servings  
 
 ## ingredients
 - 450g potatoes
+- Olive oil
 - 1 tbsp tomato ketchup
 - 25g breadcrumbs
 - 250g lean beef mince
@@ -20,7 +21,7 @@ permalink: "{{ title | slug }}.html"
 - Salt and pepper, to taste
 - 2 burger buns
 
-## steps  
+## steps
 1. Preheat oven to 220C. 
 2. Chop the potatoes to 2cm wedges with the skin on. Drizzle with olive oil and
    season with salt and pepper. Spread them out in a single layer on a baking
@@ -34,5 +35,5 @@ permalink: "{{ title | slug }}.html"
    chips.
 
 
-## notes  
+## notes
 * Serve with a salad coated in red wine vinegar and olive oil.
