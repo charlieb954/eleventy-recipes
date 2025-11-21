@@ -1,16 +1,20 @@
 # ELEVENTY RECIPES
 
-[![Eleventy Build](https://github.com/charlieb954/eleventy-recipes/actions/workflows/eleventy_build.yml/badge.svg)](https://github.com/charlieb954/eleventy-recipes/actions/workflows/eleventy_build.yml)
+[![Eleventy Build CI](https://github.com/charlieb954/eleventy-recipes/actions/workflows/eleventy_build.yml/badge.svg)](https://github.com/charlieb954/eleventy-recipes/actions/workflows/eleventy_build.yml)
 
-A personal recipe book built with [Eleventy](https://www.11ty.dev/) and deployed to GitHub Pages. This project serves as a clean, simple, and ad-free home for my favorite recipes, generated from simple Markdown files.
+A personal recipe book built with [Eleventy](https://www.11ty.dev/) and deployed
+to GitHub Pages. This project serves as a clean, simple, and ad-free home for my
+favorite recipes, generated from simple Markdown files.
 
-[View a demo here](https://charlieb954.github.io/eleventy-recipes)
+**[View the live site](https://charlieb954.github.io/eleventy-recipes)**
 
 ## ✨ Features
 
-- **Simple Content Management**: Recipes are just Markdown files. Easy to write, easy to edit.
+- **Simple Content Management**: Recipes are just Markdown files. Easy to write,
+  easy to edit.
 - **Fast and Lightweight**: Built as a static site with Eleventy.
-- **Automated Deployments**: Pushing to the `main` branch automatically builds and deploys the site using GitHub Actions.
+- **Automated Deployments**: Pushing to the `main` branch automatically builds
+  and deploys the site using GitHub Actions.
 - **Clean, Minimalist Design**: Just the recipes, no distractions.
 
 ## 🚀 Getting Started
@@ -30,7 +34,7 @@ To run this project locally:
     npm ci
     ```
 
-3. **Run the development server, the site will be available at `http://localhost:8080`.:**
+3. **Run the development server:** The site will be available at `http://localhost:8080`.
 
     ```bash
     npm start
@@ -45,9 +49,10 @@ To run this project locally:
 
 ## 📂 Project Structure
 
-Here's a breakdown of the key files and directories:
+The repository is structured to be easy to navigate, with a clear separation
+between source code, configuration, and output.
 
-```
+```bash
 eleventy-recipes/
 ├── .eleventy.js        # Eleventy configuration file.
 ├── .github/
@@ -64,18 +69,28 @@ eleventy-recipes/
 └── package.json        # Project metadata and dependencies.
 ```
 
-- **`.eleventy.js`**: Configures Eleventy. It sets up template engines (`njk`), defines the input (`src`) and output (`docs`) directories, and handles passthrough file copying for assets like CSS.
+- **`.eleventy.js`**: Configures Eleventy. It sets up template engines (`njk`),
+  defines the input (`src`) and output (`docs`) directories, and handles
+  passthrough file copying for assets like CSS.
 - **`src/`**: Contains all the source files for the website.
-  - `_includes/layouts/`: The Nunjucks templates that define the structure of the pages.
-  - `mains/`, `desserts/`: These folders contain the individual recipes as Markdown files. Eleventy uses collections to group them.
+  - `_includes/layouts/`: The Nunjucks templates that define the structure of
+    the pages.
+  - `mains/`, `desserts/`: These folders contain the individual recipes as
+    Markdown files. Eleventy uses collections to group them.
   - `index.md`: The content for the homepage, which lists all the recipes.
-- **`.github/workflows/eleventy_build.yml`**: Defines the CI/CD pipeline. On every push to the `main` branch, it checks out the code, installs dependencies, builds the Eleventy site, and deploys the contents of the `docs` folder to the `gh-pages` branch.
+- **`.github/workflows/eleventy_build.yml`**: Defines the CI/CD pipeline. On
+  every push to the `main` branch, it checks out the code, installs
+  dependencies, builds the Eleventy site, and deploys the contents of the `docs`
+  folder to the `gh-pages` branch.
 
 ## 🤖 Deployment
 
 This project uses the `peaceiris/actions-gh-pages` action to deploy the site.
 
-To use GitHub Pages with a deploy key, a public/private SSH key pair is needed. The private key is stored as a repository secret (`ACTIONS_DEPLOY_KEY`), and the public key is added as a deploy key in the repository settings with write access.
+To use GitHub Pages with a deploy key, a public/private SSH key pair is needed.
+The private key is stored as a repository secret (`ACTIONS_DEPLOY_KEY`), and the
+public key is added as a deploy key in the repository settings with write
+access.
 
 ## .nojekyll
 
@@ -84,25 +99,25 @@ tells GitHub not to use Jekyll.
 
 ## .github
 
-This folder contains the 'workflows' folder which contains the
-'elementy_build.yml' file. This is the deployment method that's used by GitHub
-actions. It tells GitHub that any time a change occurs to the 'main' branch, to
+This folder contains the `workflows` folder which contains the
+`elementy_build.yml` file. This is the deployment method that's used by GitHub
+actions. It tells GitHub that any time a change occurs to the `main` branch, to
 rebuild the website and deploy it.
 
 ## package-lock.json
 
-package-lock.json is a file that is automatically generated by npm when a
+`package-lock.json` is a file that is automatically generated by npm when a
 package is installed.
 
 ## package.json
 
-package.json files contain descriptive and functional metadata about a project,
-such as a name, version, and dependencies. Here we can also include 'scripts'
-that are actioned. For example, there's one for 'npm start' which will serve the
+`package.json` files contain descriptive and functional metadata about a project,
+such as a name, version, and dependencies. Here we can also include `scripts`
+that are actioned. For example, there's one for `npm start` which will serve the
 eleventy webpage.
 
 ## branches
 
-When the '.github/workflows/eleventy_build.yml' file is actioned by a change to
-the 'main' branch, the output will be a new branch called gh-pages. This is the
+When the `.github/workflows/eleventy_build.yml` file is actioned by a change to
+the `main` branch, the output will be a new branch called `gh-pages`. This is the
 current deployment of the website.
