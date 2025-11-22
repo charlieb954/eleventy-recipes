@@ -1,11 +1,11 @@
 ---
-title: 'mac n cheese'
-description: 'a classic mac n cheese recipe.'
+title: 'Mac n Cheese'
+description: 'A classic mac n cheese recipe.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
 
-## info  
+## info
 * About 45 minutes  
 * 4 servings
 
@@ -19,7 +19,7 @@ permalink: "{{ title | slug }}.html"
 - Salt and pepper to taste
 - Dried breadcrumbs
 
-## steps  
+## steps
 1. Preheat the oven to 200C Fan.
 2. Cook the macaroni until it’s a bit less done than normal – a couple of
    minutes less than you would usually do.

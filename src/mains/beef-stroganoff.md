@@ -1,11 +1,11 @@
 ---
-title: 'beef stroganoff'
-description: 'a simple beef stroganoff recipe.'
+title: 'Beef Stroganoff'
+description: 'A simple beef stroganoff recipe.'
 layout: 'layouts/recipe.html'
 permalink: "{{ title | slug }}.html"
 ---
 
-## info  
+## info
 * About 60 minutes  
 * 2-3 servings  
 
@@ -22,9 +22,11 @@ permalink: "{{ title | slug }}.html"
 - 1 bay leaf
 - 1 tbsp Dijon mustard
 - 1 tsp Worcestershire
+- Sour cream (to taste, e.g., 2 tbsp)
 - Salt and pepper to taste
+- Chopped parsley (for garnish, optional)
 
-## steps  
+## steps
 1. Heat the olive oil and butter in a heavy skillet over medium-high heat. 
 2. Add the beef, season with salt and pepper and cook, tossing frequently, until
    browned on all sides - about 8 minutes. Transfer to a bowl.
